@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+/* navigation bar*/
+
+
+.nav {
+  box-shadow: 0px 4px 4px  rgba(60,9,108,1);
+  width:100%;
+  position:sticky;
+  top:0;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  font-size: 20px;
+  background-color: rgba(60,9,108,1);
+
+}
+
+.nav li {
+  float: left;
+}
+
+.nav a, .dropbtn {
+  display: inline-block;
+  color: rgba(216, 212, 212,.8);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+font-family: 'Itim', cursive;
+}
+
+
+.nav a:hover, .dropdown:hover .dropbtn {
+  color: rgba(255,255,255, 1);
+}
+
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* container*/
+.container{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* Jumbotron */
+.jumbotron{
+  background-color:#ecf8f8;
+}
+
+/* logo in navigation bar */
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  .nav li{
+    float: none;
+  }
+  .nav li:hover{
+    background-color: #111;
+  }
+  .nav li a{
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+  }
+  .activenav{
+    background-color: red;
+  }
+}
